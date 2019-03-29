@@ -4,4 +4,4 @@ uses cmocka-1.1.5 for testing
 
 # Build and run tests
 
-`gcc src/test.c src/cvent.c -l cmocka`
+`gcc src/tests/event-table-test.c src/event-table.c -l cmocka`
