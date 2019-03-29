@@ -1,18 +1,20 @@
 #pragma once
 
-#define SIZE 10
+#define SIZE 3 
 
 typedef void (*Callback)();
 
 typedef enum
 {
-	Test
+	EventA,
+	EventB,
+	EventC
 } Event;
 
 typedef struct
 {
 	Callback* subscribers;
-	int size;
+	unsigned int size;
 } EventSubscribers;
 
 void init();
