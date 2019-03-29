@@ -3,7 +3,7 @@
 #include <setjmp.h>
 #include <stdbool.h>
 #include <cmocka.h>
-#include "cvent.h"
+#include "../cvent.h"
 
 bool Called = false;
 
