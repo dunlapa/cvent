@@ -1,16 +1,18 @@
 #pragma once
 
-#define SIZE 97
+#define SIZE 256
+#define DIVISION_SHIFT 8
 
 typedef char* KeyString;
 
 typedef struct
 {
-	int Key;
+	KeyString Key;
+	unsigned int Probe;
 	void* Subscribers;
 } EventSubscribers;
 
-unsigned int hash_key( KeyString );
+unsigned int hash_key(KeyString keystring);
 void add_event(KeyString keystring, void* subscribers);
 void* get_subscribers(KeyString eventstring);
 

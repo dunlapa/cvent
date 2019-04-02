@@ -5,6 +5,7 @@
 #include <cmocka.h>
 #include <stdio.h>
 #include "../event-table.h"
+
 // TODO: add more tests
 ///////////////////////////////////////////////////////////////////////////////
 static void should_return_int_from_char_array(void **state)
